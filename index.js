@@ -49,13 +49,21 @@ getElement('service-box').addEventListener('click', function (e) {
         }
         // console.log(currentCoin)
     }
+    // copy functionality
     if(e.target.className.includes('copy-btn')){
         const copyBtn=e.target
         let currentCopy=getElement('copy').innerText
         const clickCopyBtn=Number(currentCopy)+1
         // console.log(clickCopyBtn);
-        getElement('copy').innerText=clickCopyBtn
-                
+        getElement('copy').innerText=clickCopyBtn;
+        // hotline Number 
+        let hotLine=copyBtn.parentNode.parentNode.childNodes[7].childNodes[1].innerText;
+        // console.log(hotLine);
+        //  Clipboard API
+        navigator.clipboard.writeText(hotLine).then(()=>{
+            alert(`Hotline number copied!\nNumber: ${hotLine}`)
+        })
+        
     }
 })
 // click clear button than clear all call history
@@ -63,16 +71,10 @@ document.getElementById('clear-btn').addEventListener('click', function () {
     const callHistory = getElement('call-history')
     callHistory.innerText = ''
 })
+
+
+
 /*
-<div class="bg-[#FAFAFA] rounded-xl p-4 flex justify-between items-center">
-                        <div class="">
-                            <h1 class="text-[#111] font-semibold text-[18px]">Fire Service Number</h1>
-                            <p class="text-[#5c5c5cc7]">999</p>
-                        </div>
-                        <h1 class="text-[18px]">11:36:58 AM</h1>
-                    </div>
-
-
                     <div class="bg-[#FAFAFA] rounded-xl p-4 flex justify-between items-center">
                         <div class="w-3/4 border-2 border-red-300">
                             <h1 class="text-[#111] font-semibold text-[16px]">Fire Service Number</h1>
