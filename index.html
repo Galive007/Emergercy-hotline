@@ -17,22 +17,23 @@
     <header class="">
         <!-- nav section -->
         <nav class="w-11/12 py-6 mx-auto flex flex-col md:flex-row gap-3 justify-between items-center">
-            <div class="flex gap-3">
-                <img class="w-[100px]" src="./assets/logo.png" alt="">
-                <h1 class="text-[#006747] font-extrabold text-5xl">Emergency<br>Services</h1>
+            <div class="flex items-center justify-center gap-3">
+                <img class="w-[20%] md:w-[100px]" src="./assets/logo.png" alt="">
+                <h1 class="text-[#006747] font-extrabold text-3xl md:text-5xl">Emergency<br>Services</h1>
             </div>
-            <div class="flex items-center gap-5">
-                <div class="flex justify-center items-center bg-[#41ff6b1a] rounded-3xl py-2 px-3 gap-3">
+            <div class="flex items-center gap-2 md:gap-5">
+                <button class="btn bg-[#41ff6b1a] rounded-3xl py-5 md:py-5 px-0 md:px-7">
                     <span id="heart-count">0</span>
                     <img class="w-1/4" src="./assets/heart.png" alt="">
-                </div>
-                <div class="flex justify-center items-center bg-[#41ff6b1a] rounded-3xl py-2 px-3 gap-3">
+                </button>
+                <button class="btn bg-[#41ff6b1a] rounded-3xl py-5 md:py-5 px-0 md:px-7">
                     <span id="current-coin">100</span>
                     <img class="w-1/4" src="./assets/coin.png" alt="">
-                </div>
-                <div class="flex justify-center items-center bg-[#00A63E] rounded-3xl py-3 px-9 gap-3">
-                    <h2 class="font-semibold text-base text-white"><span id="copy">0</span> Copy</h2>
-                </div>
+                </button>
+                
+                <button class="btn py-5 px-7 bg-[#00A63E] rounded-3xl border-none font-semibold text-base text-white">
+                        <span id="copy">0</span> Copy
+                <button>
             </div>
         </nav>
         <!-- banner section -->
@@ -47,12 +48,12 @@
         </div>
     </header>
     <main class="bg-[#f5fff6]">
-        <section id="porducts-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
+        <section id="porducts-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-3 md:gap-8">
             <section id="service-box" class="col-span-9">
                 <!-- 1st row -->
-                <div class="grid grid-cols-3 gap-3">
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3">
                     <!-- card box -->
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -76,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-2 rounded-xl flex justify-center items-center">
                                 <img class="w-full" src="./assets/police.png" alt="">
@@ -99,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -121,11 +122,9 @@
                                     class="fa-solid fa-phone call-btn"></i> Call</button>
                         </div>
                     </div>
-                </div>
-                <!-- 2nd row -->
-                <div class="grid grid-cols-3 gap-3 mt-4">
+                    <!-- 2nd row -->
                     <!-- card box -->
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/ambulance.png" alt="">
@@ -148,7 +147,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -171,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -193,11 +192,10 @@
                                     class="fa-solid fa-phone call-btn copy-btn"></i> Call</button>
                         </div>
                     </div>
-                </div>
-                <!-- 3rd row -->
-                <div class="grid grid-cols-3 gap-3 mt-4">
+
+                    <!-- 3rd row -->
                     <!-- card box -->
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -220,7 +218,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -243,7 +241,7 @@
                         </div>
                     </div>
 
-                    <div class="card-box p-7 bg-white rounded-xl shadow-xl">
+                    <div class="card-box p-3 md:p-7 bg-white rounded-xl shadow-xl">
                         <div class="flex justify-between items-center mb-3">
                             <div class="bg-[#FFE3E2] w-[60px] p-3 rounded-xl flex justify-center items-center">
                                 <img src="./assets/emergency.png" alt="">
@@ -267,13 +265,13 @@
                     </div>
                 </div>
             </section>
-            <aside class="col-span-3 p-7 bg-white rounded-xl shadow-xl">
-                <div class="flex justify-between items-center py-1">
+            <aside class="col-span-3 md:p-7 bg-white rounded-xl shadow-xl">
+                <div class="flex flex-col lg:flex-row justify-between items-center py-1">
                     <div class="flex items-center justify-start gap-2">
                         <i class="fa-regular fa-clock text-[#5c5c5cc6]"></i>
-                        <h3 class="text-[#111] font-medium text-[20px]">Call History</h3>
+                        <h3 class="text-[#111] font-medium text-base md:text-[20px]">Call History</h3>
                     </div>
-                    <button id="clear-btn" class="btn rounded-3xl text-white px-7 bg-[#00A63E]">Clear</button>
+                    <button id="clear-btn" class="btn rounded-3xl text-white px-2 md:px-7 bg-[#00A63E]">Clear</button>
                 </div>
                 <div id="call-history" class="mt-4">
                     

@@ -35,9 +35,9 @@ getElement('service-box').addEventListener('click', function (e) {
             const callHistory = getElement('call-history')
             const newDiv = document.createElement('div')
             newDiv.innerHTML = `
-                            <div class="bg-[#FAFAFA] mt-3 rounded-xl p-4 flex justify-between items-center">
-                        <div class="w-3/4">
-                            <h1 class="text-[#111] font-semibold text-[18px]">${serviceName}</h1>
+                <div class="bg-[#FAFAFA] mt-3 rounded-xl p-4 flex flex-col md:flex-row justify-between items-center">
+                        <div class="lg:w-3/4">
+                            <h1 class="text-[#111] font-semibold text-base md:text-[18px]">${serviceName}</h1>
                             <p class="text-[#5c5c5cc7] font-semibold">${callNumber}</p>
                         </div>
                         <h1 class="text-[18px]">${date}</h1>
