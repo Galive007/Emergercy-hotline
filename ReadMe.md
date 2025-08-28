@@ -4,11 +4,13 @@ What is the difference between getElementById, getElementsByClassName, and query
 2.querySelector and getElementById both return a single element. querySelectorAll and getElementsByName both return NodeLists.
 
 How do you create and insert a new element into the DOM?
+
 i.create new div : its makes position to new div...
 Example:    const newDiv=document.createElement('div')
             newDiv.innerHTML=`
             (create HTML structure)
              `
+
 ii.insert a new element: 
 Example:    'callingID'.append(newDiv)
 
